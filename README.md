@@ -1,7 +1,7 @@
 # packer-ubuntu20.04
-Packer template to build Ubuntu 20.04 image  for virtualbox (Vagrant). 
+Packer template to build a Jupyterhub image to use with Digital Ocean. 
 
-Packer template to build Ubuntu 20.04 image  for virtualbox (Vagrant). Ubuntu is discontinuing support for the Debian-installer based classic server installer from 20.04 LTS (Focal Fossa) making the way for subiquity server installer. This template use subiquity with cloud-init template to build the image.
+Packer template to build a Jupyterhub image to use with Digital Ocean. The image will use A simple The Littlest JupyterHub, a distribution for a small (0-100) number of users on a single server. More details at: https://tljh.jupyter.org/
 
 
 ## Requirements
