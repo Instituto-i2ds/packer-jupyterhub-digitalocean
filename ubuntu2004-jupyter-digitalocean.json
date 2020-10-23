@@ -1,0 +1,26 @@
+{
+  "variables": {
+    "do_api_token": "{{env `DIGITALOCEAN_API_TOKEN`}}"
+  },
+
+  "builders": [{
+    "type": "digitalocean",
+    "api_token": "{{user `do_api_token`}}",
+    "size": "2gb",
+    "region": "nyc1",
+    "image": "ubuntu-20-04-x64",
+    "droplet_name": "packer-ubuntu-20-04-x64",
+    "snapshot_name": "jupyterhub-ubuntu20.04-build-with-packer-{{timestamp}}",
+    "ssh_username": "root",
+    "private_networking": true,
+    "monitoring": true
+  }],
+
+  "provisioners": [{
+    "type": "shell",
+    "scripts": [
+      "scripts/update.sh",
+      "scripts/tljh.sh"
+    ]
+  }]
+}
