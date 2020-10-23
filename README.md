@@ -1,7 +1,7 @@
-# packer-ubuntu20.04
+# packer-jupyterhub-digitalocean
 Packer template to build a Jupyterhub image to use with Digital Ocean. 
 
-Packer template to build a Jupyterhub image to use with Digital Ocean. The image will use A simple The Littlest JupyterHub, a distribution for a small (0-100) number of users on a single server. More details at: https://tljh.jupyter.org/
+The image will use A simple The Littlest JupyterHub, a distribution for a small (0-100) number of users on a single server. More details at: https://tljh.jupyter.org/
 
 
 ## Requirements
